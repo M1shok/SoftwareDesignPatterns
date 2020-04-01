@@ -6,7 +6,7 @@ class Transport
 {
 public:
     Transport() = default;
-    virtual ~Transport() noexcept = 0;
+    virtual ~Transport() = default;
 
     Transport(const Transport & transport) = default;
     Transport(Transport && transport) = default;
@@ -15,7 +15,7 @@ public:
     Transport & operator = (Transport && transport) = default;
 
 public:
-    virtual double calculatePathWorth(double km) = 0;
+    virtual void deliver() = 0;
 };
 
 #endif // TRANSPORT_H

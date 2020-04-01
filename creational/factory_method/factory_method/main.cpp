@@ -1,9 +1,14 @@
-#include <iostream>
-
-using namespace std;
+#include "sealogistics.h"
+#include "roadlogistics.h"
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    Logistics * logistics = new SeaLogistics;
+    logistics->planDelivery();
+    delete logistics;
+
+    logistics = new RoadLogistics;
+    logistics->planDelivery();
+    delete logistics;
     return 0;
 }
