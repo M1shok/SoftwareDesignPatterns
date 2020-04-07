@@ -4,4 +4,12 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        databaseworker.cpp \
+        main.cpp \
+        mysqldatabaseworker.cpp \
+        proxydatabaseworker.cpp
+
+HEADERS += \
+    databaseworker.h \
+    mysqldatabaseworker.h \
+    proxydatabaseworker.h
