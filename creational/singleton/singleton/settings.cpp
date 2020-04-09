@@ -5,7 +5,7 @@ Settings::Settings()
     load();
 }
 
-Settings &Settings::instance()
+Settings& Settings::instance()
 {
     static Settings settings;
     return settings;

@@ -1,9 +1,11 @@
-#include <iostream>
-
-using namespace std;
+#include "testrequest.h"
+#include "clientrequesthandler.h"
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    ClientRequestHandler rh;
+    Request * request = new TestRequest;
+    rh.onRequest(request);
+    delete request;
     return 0;
 }

@@ -4,4 +4,14 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        clientrequesthandler.cpp \
+        main.cpp \
+        request.cpp \
+        requesthandler.cpp \
+        testrequest.cpp
+
+HEADERS += \
+    clientrequesthandler.h \
+    request.h \
+    requesthandler.h \
+    testrequest.h

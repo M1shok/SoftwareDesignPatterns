@@ -15,7 +15,7 @@ Cell *Cell::divide()
     static std::uniform_int_distribution<int> dist(0, 9);
 
     std::string newGenom = cellGenom->genom();
-    if (dist(generator) > 5)
+    if (dist(generator) > 8)
     {
         char mutation = 'a' + dist(generator);
         newGenom += mutation;

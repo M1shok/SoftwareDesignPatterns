@@ -7,8 +7,8 @@
 int main()
 {
     FileDataStream fileDataStream("output.txt");
-    CompressionDecorator compressionDecorator(&fileDataStream);
-    EncryptionDecorator encryptionDecorator(&compressionDecorator);
+    EncryptionDecorator encryptionDecorator(&fileDataStream);
+    CompressionDecorator compressionDecorator(&encryptionDecorator);
 
     std::cout << "Read from file: " <<
                  encryptionDecorator.read(10) << std::endl;
